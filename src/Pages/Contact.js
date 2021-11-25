@@ -66,11 +66,11 @@ function ContactPage() {
           </div>
           <form className="form" onSubmit={handleFormSubmit}>
             <div className="form-field">
-              <label htmlFor="name">Enter your name*</label>
+              <label htmlFor="visitor-name">Enter your name*</label>
               <input
                 type="text"
                 id="name"
-                name="name"
+                name="visitor-name"
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
@@ -112,9 +112,8 @@ function ContactPage() {
               />
             </div>
             <div className="form-field">
-              <label htmlFor="text-area">Enter your Message*</label>
+              <label htmlFor="message">Enter your Message*</label>
               <textarea
-                name="textarea"
                 id="textarea"
                 cols="30"
                 rows="10"
