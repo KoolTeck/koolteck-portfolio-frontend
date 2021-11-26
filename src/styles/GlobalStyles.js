@@ -188,7 +188,7 @@ h6{
 
   .nav-toggle {
     transform: translateX(0);
-    z-index: 20;
+    z-index: 500;
   }
 
 `;
