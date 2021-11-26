@@ -22,6 +22,7 @@ function ContactPage() {
   const [error2, setError2] = useState(false);
   const [error3, setError3] = useState(false);
   const [successAlert, setSuccessAlert] = useState("");
+  // eslint-disable-next-line
   const [show, setShow] = useState(false);
 
   const handleFormSubmit = async (e) => {
@@ -39,18 +40,25 @@ function ContactPage() {
       subject: subject,
       message: message,
     };
-    const resp = await fetch("https://koolteck-portfolio.herokuapp.com/visitor", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const resp = await fetch(
+      "https://koolteck-portfolio.herokuapp.com/visitor",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     if (resp.ok) {
       const succesMessage = await resp.json();
       setSuccessAlert(succesMessage.success);
       setShow(true);
+      setName("");
+      setSubject("");
+      setEmail("");
+      setMessage("");
     } else {
       console.log(resp);
       setSuccessAlert(resp);
@@ -247,7 +255,7 @@ const ContactPageStyled = styled.section`
         display: flex;
         font-size: 1.1rem;
         flex-direction: column-reverse;
-        width: 40%;
+        width: 100%;
         padding: 0.5rem;
         text-align: center;
         border-radius: 0.5rem;

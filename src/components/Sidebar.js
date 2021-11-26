@@ -6,6 +6,7 @@ function Sidebar({ navToggle }) {
   return (
     <SidebarStyled
       className={`${navToggle ? "nav-toggle-on" : "nav-toggle-off"}`}
+      id="sideBar"
     >
       <Navigation />
     </SidebarStyled>

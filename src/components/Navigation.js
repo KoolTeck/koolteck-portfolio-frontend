@@ -8,8 +8,9 @@ import Close from "@mui/icons-material/Close";
 function Navigation() {
   const year = new Date().getFullYear();
   const handleSidebarClose = () => {
-    const sideBar = document.querySelector(".nav-toggle-off");
-    sideBar.classList.toggle("nav-toggle-on");
+    const sideBar = document.getElementById("sideBar");
+    sideBar.classList.remove("nav-toggle-on");
+    sideBar.classList.add("nav-toggle-off");
   };
 
   return (
@@ -155,6 +156,12 @@ const NavigationStyled = styled.nav`
 
     .close {
       display: block;
+    }
+
+    .avatar {
+      img {
+        width: 50%;
+      }
     }
   }
 `;

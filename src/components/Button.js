@@ -44,5 +44,9 @@ const ButtonsStyled = styled.div`
   flex-wrap: wrap;
   width: 70%;
   margin: 2.4rem auto;
+
+  @media screen and (max-width: 450px) {
+    width: auto;
+  }
 `;
 export default Button;

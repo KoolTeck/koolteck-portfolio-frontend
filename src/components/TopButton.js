@@ -14,7 +14,7 @@ function TopButton() {
   }, []);
   return (
     <TopButtonStyled href="#">
-      {screenHeight > 500 && <ArrowUpIcon />}
+      {screenHeight > 400 && <ArrowUpIcon />}
     </TopButtonStyled>
   );
 }
@@ -26,7 +26,7 @@ const TopButtonStyled = styled.a`
   align-items: center;
   z-index: 15;
   top: 90vh;
-  right: 8px;
+  right: 10px;
   transition: 0.4s all ease-in-out;
   &:hover {
     color: var(--white-color);
@@ -34,7 +34,7 @@ const TopButtonStyled = styled.a`
   }
 
   svg {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 `;
 

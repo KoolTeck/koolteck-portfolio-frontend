@@ -136,7 +136,7 @@ h6{
     top: 50%;
     background-color: var(--background-light-color-2);
     width: 5.1rem;
-    height: 2.5rem;
+    height: 1.8rem;
     z-index: 15;
     display: flex;
     align-items: center;
@@ -144,7 +144,7 @@ h6{
     svg {
       display: flex;
       align-items: center;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       color: var(--white-color);
     }
   }
