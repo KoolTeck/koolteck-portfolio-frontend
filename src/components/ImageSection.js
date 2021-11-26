@@ -38,7 +38,7 @@ function ImageSection() {
         </div>
         <PrimaryButton
           href={
-            "http://localhost:4000/Adebowale-Adetunji?target=https://hire-kooldev.herokuapp.com/"
+            "https://koolteck-portfolio.herokuapp.com/Adebowale-Adetunji?target=https://hire-kooldev.herokuapp.com/"
           }
           title={"Download Cv"}
         />
