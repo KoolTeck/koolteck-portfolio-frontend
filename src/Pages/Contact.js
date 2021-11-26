@@ -39,7 +39,7 @@ function ContactPage() {
       subject: subject,
       message: message,
     };
-    const resp = await fetch("http://localhost:4000/visitor", {
+    const resp = await fetch(https://koolteck-portfolio.herokuapp.com/visitor", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
