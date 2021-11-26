@@ -4,7 +4,9 @@ import Navigation from "./Navigation";
 
 function Sidebar({ navToggle }) {
   return (
-    <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
+    <SidebarStyled
+      className={`${navToggle ? "nav-toggle-on" : "nav-toggle-off"}`}
+    >
       <Navigation />
     </SidebarStyled>
   );
@@ -17,17 +19,8 @@ const SidebarStyled = styled.div`
   background-color: var(--sidebar-dark-color);
   overflow: hidden;
   transition: all 0.4s ease-in-out;
-  @media screen and (max-width: 1200px) {
-    transform: translateX(-100%);
-    z-index: 500;
-  }
   @media screen and (max-width: 450px) {
     width: 100%;
-  }
-
-  .nav-toggle {
-    transform: translateX(0);
-    z-index: 500;
   }
 `;
 

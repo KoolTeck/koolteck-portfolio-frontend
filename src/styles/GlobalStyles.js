@@ -167,7 +167,16 @@ h6{
     .ham-burger-menu {
       display: block;
     }
+        .nav-toggle-off {
+        transform: translateX(-100%);
+        z-index: 500;
+    }
   }
+
+  .nav-toggle-on {
+        transform: translateX(0%);
+        z-index: 500;
+    }
 
   .preloader{
     background-color: rgba(73, 166, 233, 0.5);
@@ -186,10 +195,7 @@ h6{
     }
   }
 
-  .nav-toggle {
-    transform: translateX(0);
-    z-index: 500;
-  }
+ 
 
 `;
 
