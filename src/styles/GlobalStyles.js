@@ -166,9 +166,6 @@ h6{
     z-index: 20;
   }
 
-.nav-toggle2{
-     transform: translateX(-100%);
-}
 
   @media screen and (max-width: 1200px) {
     .ham-burger-menu {
