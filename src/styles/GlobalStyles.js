@@ -162,8 +162,11 @@ h6{
   }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a3b6c5d19028cd7e0fc1e3825a0a22475bf9bab7
 
   @media screen and (max-width: 1200px) {
     .ham-burger-menu {
