@@ -24,6 +24,12 @@ const SidebarStyled = styled.div`
   @media screen and (max-width: 450px) {
     width: 100%;
   }
+
+  .nav-toggle {
+    transform: translateX(0);
+    z-index: 20;
+  }
+
 `;
 
 export default Sidebar;
