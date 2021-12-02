@@ -21,39 +21,69 @@ function Navigation() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/" activeClassName="active-class" exact>
+          <NavLink
+            to="/"
+            activeClassName="active-class"
+            exact
+            onClick={handleSidebarClose}
+          >
             Home
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-class" exact>
+          <NavLink
+            to="/about"
+            activeClassName="active-class"
+            exact
+            onClick={handleSidebarClose}
+          >
             About
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class" exact>
+          <NavLink
+            to="/resume"
+            activeClassName="active-class"
+            exact
+            onClick={handleSidebarClose}
+          >
             Resume
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/portfolios" activeClassName="active-class" exact>
+          <NavLink
+            to="/portfolios"
+            activeClassName="active-class"
+            exact
+            onClick={handleSidebarClose}
+          >
             Portfolios
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/blogs" activeClassName="active-class" exact>
+          <NavLink
+            to="/blogs"
+            activeClassName="active-class"
+            exact
+            onClick={handleSidebarClose}
+          >
             Blogs
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-class" exact>
+          <NavLink
+            to="/contact"
+            activeClassName="active-class"
+            exact
+            onClick={handleSidebarClose}
+          >
             Contact
           </NavLink>
         </li>
       </ul>
       <footer className="footer">
         <p>
-          @{year} <b>Adebowale Adetunji</b>
+          &copy; {year} <b>Adebowale Adetunji</b>
         </p>
       </footer>
     </NavigationStyled>
