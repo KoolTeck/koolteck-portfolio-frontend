@@ -30,7 +30,7 @@ function Home() {
         </p>
         <div className="icons">
           <a
-            href="https://web.facebook.com/adebowale.adetunji//"
+            href="https://www.facebook.com/adebowale.adetunji/"
             className="icon i-facebook"
             rel="noreferrer"
             target="_blank"
