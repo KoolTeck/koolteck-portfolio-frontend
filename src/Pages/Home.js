@@ -4,6 +4,7 @@ import styled from "styled-components";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GithubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import Emoji from "a11y-react-emoji";
 
 function Home() {
@@ -29,6 +30,14 @@ function Home() {
           technical skills to excel as a backend developer.
         </p>
         <div className="icons">
+          <a
+            href="https://www.twitter.com/kooljoe247/"
+            className="icon i-twitter"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <TwitterIcon />
+          </a>
           <a
             href="https://www.facebook.com/adebowale.adetunji/"
             className="icon i-facebook"
@@ -110,6 +119,12 @@ const HomeStyled = styled.header`
         &:hover {
           border: 2px solid #5f4687;
           color: #5f4687;
+        }
+      }
+      .i-twitter {
+        &:hover {
+          border: 2px solid #1da1f2;
+          color: #1da1f2;
         }
       }
     }
